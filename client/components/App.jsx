@@ -10,7 +10,7 @@ export default function App() {
 
   const searchApi = () => {
     axios
-      .get(`http://3.133.82.213:3000/api/${start}/${end}`)
+      .get(`https://3.133.82.213:3000/api/${start}/${end}`)
       .then((results) => {
         setData(formatData(results.data.bpi));
       });
