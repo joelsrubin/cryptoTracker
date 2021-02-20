@@ -9,9 +9,11 @@ export default function App() {
   const [data, setData] = useState([]);
 
   const searchApi = () => {
-    axios.get(`http://3.133.82.213/api/${start}/${end}`).then((results) => {
-      setData(formatData(results.data.bpi));
-    });
+    axios
+      .get(`http://3.133.82.213:3000/api/${start}/${end}`)
+      .then((results) => {
+        setData(formatData(results.data.bpi));
+      });
   };
 
   const formatData = (results) => {
