@@ -29,8 +29,6 @@ export default function App() {
     return result;
   };
 
-  console.log(data);
-
   return (
     <div>
       <Header>
